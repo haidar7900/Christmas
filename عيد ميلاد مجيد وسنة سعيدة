@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شجرة الميلاد 2024-2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>شجرة الميلاد</h1>
+        <h2 id="year">2024</h2>
+        <div class="tree">
+            <div class="star"></div>
+            <div class="layer layer1"></div>
+            <div class="layer layer2"></div>
+            <div class="layer layer3"></div>
+            <div class="trunk"></div>
+        </div>
+        <audio controls autoplay loop>
+            <source src="https://www.chosic.com/wp-content/uploads/2021/01/Jingle-Bells.mp3" type="audio/mpeg">
+            متصفحك لا يدعم تشغيل الصوت.
+        </audio>
+        <footer>
+            <p>Instagram: <a href="https://www.instagram.com/haidar790" target="_blank">@haidar790</a></p>
+            <p>من تصميم: المهندس حيدر الجنابي</p>
+        </footer>
+    </div>
+    <script>
+        // تحويل السنة من 2024 إلى 2025
+        let yearElement = document.getElementById('year');
+        setTimeout(() => {
+            yearElement.textContent = "2025";
+        }, 5000); // بعد 5 ثوانٍ
+    </script>
+</body>
+</html>
