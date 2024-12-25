@@ -1,113 +1,37 @@
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    overflow: hidden;
-    direction: rtl;
-    flex-direction: column;
-}
-
-.container {
-    text-align: center;
-}
-
-h1 {
-    font-size: 4rem;
-    color: red;
-    text-shadow: 0 0 20px red, 0 0 40px yellow;
-    margin: 10px 0;
-    animation: glow 2s infinite alternate;
-}
-
-h2 {
-    font-size: 6rem;
-    color: yellow;
-    text-shadow: 0 0 20px yellow, 0 0 40px red;
-    margin: 10px 0;
-    transition: color 1s ease-in-out, text-shadow 1s ease-in-out;
-}
-
-.tree {
-    position: relative;
-    margin: 20px auto;
-    width: 120px;
-    height: 200px;
-}
-
-.star {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 20px;
-    height: 20px;
-    background: yellow;
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    animation: glow 1s infinite alternate;
-}
-
-.layer {
-    position: absolute;
-    background: green;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 50%;
-}
-
-.layer1 {
-    top: 30px;
-    width: 100px;
-    height: 50px;
-}
-
-.layer2 {
-    top: 70px;
-    width: 80px;
-    height: 50px;
-}
-
-.layer3 {
-    top: 110px;
-    width: 60px;
-    height: 40px;
-}
-
-.trunk {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 20px;
-    height: 40px;
-    background: brown;
-}
-
-footer {
-    margin-top: 30px;
-    font-size: 1.2rem;
-}
-
-footer a {
-    color: lightblue;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    color: cyan;
-}
-
-@keyframes glow {
-    from {
-        text-shadow: 0 0 10px red, 0 0 20px yellow;
-    }
-    to {
-        text-shadow: 0 0 20px red, 0 0 30px yellow;
-    }
-}
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ترحيب السنة الجديدة 2024-2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ترحيب السنة الجديدة</h1>
+        <h2 id="year">2024</h2>
+        <div class="tree">
+            <div class="star"></div>
+            <div class="layer layer1"></div>
+            <div class="layer layer2"></div>
+            <div class="layer layer3"></div>
+            <div class="trunk"></div>
+        </div>
+        <audio controls autoplay loop>
+            <source src="https://www.fesliyanstudios.com/play-mp3/387" type="audio/mpeg">
+            متصفحك لا يدعم تشغيل الصوت.
+        </audio>
+        <footer>
+            <p>Instagram: <a href="https://www.instagram.com/haidar790" target="_blank">@haidar790</a></p>
+            <p>من تصميم: المهندس حيدر الجنابي</p>
+        </footer>
+    </div>
+    <script>
+        // تحويل السنة من 2024 إلى 2025
+        let yearElement = document.getElementById('year');
+        setTimeout(() => {
+            yearElement.textContent = "2025";
+        }, 5000); // بعد 5 ثوانٍ
+    </script>
+</body>
+</html>
