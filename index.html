@@ -3,15 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سنة سعيدة 2024-2025</title>
+    <title>كل عام وأنتم بخير 2024-2025</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .subtitle {
+            color: yellow;
+            font-size: 2rem;
+            margin-top: -10px;
+        }
+    </style>
 </head>
 <body>
-    <div style="text-align: center; margin-top: 100px;">
-        <h1 style="color: yellow;">كل عام وأنتم بخير</h1>
-        <h2 style="color: yellow;">سنة سعيدة عليكم</h2>
+    <div class="container">
+        <h1>كل عام وأنتم بخير</h1>
+        <h2 class="subtitle">سنة سعيدة عليكم</h2>
+        <h2 id="year">2024</h2>
+        <div class="tree">
+            <div class="star"></div>
+            <div class="layer layer1"></div>
+            <div class="layer layer2"></div>
+            <div class="layer layer3"></div>
+            <div class="trunk"></div>
+        </div>
         <audio controls autoplay loop>
-            <source src="https://sandbox:/mnt/data/NewYearAudio.mp3" type="audio/mpeg">
+            <source src="https://example.com/your-audio.mp3" type="audio/mpeg">
         </audio>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qAo4wyf8_wg?autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <footer>
+            <p>Instagram: <a href="https://www.instagram.com/haidar790" target="_blank">@haidar790</a></p>
+            <p>من تصميم: المهندس حيدر الجنابي</p>
+        </footer>
     </div>
+    <script>
+        // تحويل السنة من 2024 إلى 2025
+        let yearElement = document.getElementById('year');
+        setTimeout(() => {
+            yearElement.textContent = "2025";
+        }, 5000); // بعد 5 ثوانٍ
+    </script>
 </body>
 </html>
